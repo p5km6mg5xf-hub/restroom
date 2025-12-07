@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+/*  .click-area {
+    display: block;
+        width: 100%;
+        height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit; */
+    
+.container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.left-text {
+    position: absolute;
+    left: 55px;
+    top: 200px;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+}
+
+/* 오른쪽 세로 '기능과 과정' */
+.right-text {
+    position: absolute;
+    right: 50px;
+    top: 20%;
+    transform: translateY(-30%);
+    word-spacing: -10px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+/* 하단 오른쪽 © 2025 Kim doyeon */
+.copyright {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}

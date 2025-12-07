@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard", sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+}
+
+/* 왼쪽 이미지 */
+.left-image {
+    flex: 0 0 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/doormain1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.left-image h1 {
+    writing-mode: vertical-rl;
+    font-size: 70px;
+    letter-spacing: -10px;
+    position: absolute; 
+    top: 40px;          
+    left: 50px;         
+    color: white;      
+    padding: 10px;      
+    margin: 0;          
+}
+.left-image h2 {
+writing-mode: vertical-rl;
+    font-size: 35px;
+    letter-spacing: -8px;
+    position: absolute; 
+    bottom: 50px;          
+    left: 70px;         
+    color: white;      
+    padding: 10px;      
+    margin: 0;    
+}
+
+.right-content {
+    flex: 0 0 50%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    flex: 1;
+    padding: 40px 100px;
+    text-align: center;
+}
+
+.top-section h3 {
+    font-size: 37px;
+    margin-top: 30px;
+    margin-bottom: 22px;
+    font-weight: 700;
+}
+
+.top-section p {
+    font-size: 18px;
+    margin-top: 25px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.button-container {
+  width: 100%;
+  max-width: 450px;               
+  margin: 40px auto;
+  margin-top: 50px;
+  display: flex;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 18px 0;
+  font-size: 18px;
+  background: #fff;
+  border: none;
+  border-right: 2px solid #000;
+  font-family: "Noto Sans KR", sans-serif;
+  cursor: pointer;
+}
+
+.action-btn:last-child {
+  border-right: none;           
+}
+
+.arrow {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.image-scroll-area {
+    height: 440px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /*margin-bottom: 50px;*/
+    padding-bottom: 50px
+
+}
+
+.scroll-inner {
+    display: inline-flex;
+}
+
+.scroll-inner img {
+    height: 370px;
+}
+
+.brown-bar {
+   position: absolute;
+    right: 0;
+    bottom: 0;                 /* 딱 아래에 붙게 */
+    width: 50%;
+    height: 45px;              /* 사진 속 두께 */
+    background-color: #4a3b34; /* 사진과 동일한 브라운 */
+}
+

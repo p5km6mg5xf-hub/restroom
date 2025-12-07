@@ -21,7 +21,7 @@ body {
     flex: 0 0 50%;
     width: 100%;
     height: 100%;
-    background-image: url('images/doormain1.png');
+    background-image: url('doormain1.png');
     background-size: cover;
     background-position: center;
 }
